@@ -1,0 +1,22 @@
+
+
+# Instructions before anything else make venv
+############################
+# py -m venv venv
+# venv\Scripts\activate
+
+blobstorage.py
+############################
+# Install This: pip install azure-storage-blob
+1) This uploads hello world to blob after saving it in new data directory in current working directory as uuid file name 
+2) Lists blob in container
+3) Downloads a sepecific file called sample.txt
+
+recognizer_0.py
+############################
+# Install This: pip install azure-ai-formrecognizer==3.2.0b3 
+# Install This: pip install azure-core
+# Might need pip install azure-storage-blob==0.37.1  I DONT KNOW YET
+1) In storage account uses form recognizer read api to connect to the file form-recognizer/forms/PPOR1005_1.png
+2) Note line 60:64 saves the output to txt file
+3) Next step is to loop through all pages and then send to blob storage then read from blob and do NLP and Structure
